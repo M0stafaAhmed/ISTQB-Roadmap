@@ -1,0 +1,217 @@
+<!--ISTQB Chapter 2 Practice Exam-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISTQB Chapter 2 Practice Exam</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .question {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .question h3 {
+            margin: 0 0 10px;
+        }
+        .question input[type="radio"] {
+            margin-right: 10px;
+        }
+        .result {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            border: 2px solid #4caf50;
+            border-radius: 5px;
+            background-color: #e8f5e9;
+        }
+        .result h2 {
+            margin: 0;
+            color: #4caf50;
+        }
+        .result p {
+            margin: 5px 0 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>ISTQB Chapter 2 Practice Exam</h1>
+    <form id="exam-form">
+        <!-- Easy Questions -->
+        <div class="question">
+            <h3>1. What is the main focus of unit testing?</h3>
+            <label><input type="radio" name="q1" value="a">Testing the interactions between components.</label><br>
+            <label><input type="radio" name="q1" value="b">Testing the smallest pieces of code, like functions or methods.</label><br>
+            <label><input type="radio" name="q1" value="c">Ensuring the software meets business requirements.</label>
+        </div>
+
+        <div class="question">
+            <h3>2. In the V-model, when are system tests typically performed?</h3>
+            <label><input type="radio" name="q2" value="a">Before integration testing.</label><br>
+            <label><input type="radio" name="q2" value="b">After integration testing.</label><br>
+            <label><input type="radio" name="q2" value="c">After acceptance testing.</label>
+        </div>
+
+        <div class="question">
+            <h3>3. Which development model emphasizes rapid delivery of small, functional parts of a system?</h3>
+            <label><input type="radio" name="q3" value="a">Waterfall model.</label><br>
+            <label><input type="radio" name="q3" value="b">Incremental model.</label><br>
+            <label><input type="radio" name="q3" value="c">V-model.</label>
+        </div>
+
+        <div class="question">
+            <h3>4. What type of testing focuses on system performance and scalability?</h3>
+            <label><input type="radio" name="q4" value="a">Functional testing.</label><br>
+            <label><input type="radio" name="q4" value="b">Non-functional testing.</label><br>
+            <label><input type="radio" name="q4" value="c">Structural testing.</label>
+        </div>
+
+        <div class="question">
+            <h3>5. What is regression testing?</h3>
+            <label><input type="radio" name="q5" value="a">Testing new functionality only.</label><br>
+            <label><input type="radio" name="q5" value="b">Testing to ensure changes have not caused unintended defects.</label><br>
+            <label><input type="radio" name="q5" value="c">Testing system integration.</label>
+        </div>
+
+        <!-- Medium Questions -->
+        <div class="question">
+            <h3>6. What is the main goal of acceptance testing?</h3>
+            <label><input type="radio" name="q6" value="a">To test software's integration with other systems.</label><br>
+            <label><input type="radio" name="q6" value="b">To validate that the software meets business or user requirements.</label><br>
+            <label><input type="radio" name="q6" value="c">To identify defects in individual units of code.</label>
+        </div>
+
+        <div class="question">
+            <h3>7. Which SDLC model is most suitable for projects with unclear requirements?</h3>
+            <label><input type="radio" name="q7" value="a">Waterfall model.</label><br>
+            <label><input type="radio" name="q7" value="b">Agile model.</label><br>
+            <label><input type="radio" name="q7" value="c">V-model.</label>
+        </div>
+
+        <div class="question">
+            <h3>8. In integration testing, what is the goal?</h3>
+            <label><input type="radio" name="q8" value="a">To test individual components of the software.</label><br>
+            <label><input type="radio" name="q8" value="b">To ensure components or systems interact correctly.</label><br>
+            <label><input type="radio" name="q8" value="c">To ensure the system meets user needs.</label>
+        </div>
+
+        <div class="question">
+            <h3>9. When is maintenance testing required?</h3>
+            <label><input type="radio" name="q9" value="a">When migrating software to a new environment.</label><br>
+            <label><input type="radio" name="q9" value="b">When new features are being added to the system.</label><br>
+            <label><input type="radio" name="q9" value="c">In both situations above.</label>
+        </div>
+
+        <div class="question">
+            <h3>10. Which type of testing is usually conducted by end-users?</h3>
+            <label><input type="radio" name="q10" value="a">Unit testing.</label><br>
+            <label><input type="radio" name="q10" value="b">Acceptance testing.</label><br>
+            <label><input type="radio" name="q10" value="c">Integration testing.</label>
+        </div>
+
+        <!-- Medium (Added Questions 11-15) -->
+        <div class="question">
+            <h3>11. What is the primary goal of integration testing?</h3>
+            <label><input type="radio" name="q11" value="a">To test the smallest units of code individually.</label><br>
+            <label><input type="radio" name="q11" value="b">To verify interactions between integrated components.</label><br>
+            <label><input type="radio" name="q11" value="c">To confirm the system meets customer expectations.</label>
+        </div>
+
+        <div class="question">
+            <h3>12. Which of the following best describes Agile testing?</h3>
+            <label><input type="radio" name="q12" value="a">Testing performed after development is completed.</label><br>
+            <label><input type="radio" name="q12" value="b">Testing performed continuously during development iterations.</label><br>
+            <label><input type="radio" name="q12" value="c">Testing performed only on new features.</label>
+        </div>
+
+        <div class="question">
+            <h3>13. In which test level is system functionality verified as a whole?</h3>
+            <label><input type="radio" name="q13" value="a">Unit testing.</label><br>
+            <label><input type="radio" name="q13" value="b">Integration testing.</label><br>
+            <label><input type="radio" name="q13" value="c">System testing.</label>
+        </div>
+
+        <div class="question">
+            <h3>14. What is one key difference between structural and functional testing?</h3>
+            <label><input type="radio" name="q14" value="a">Structural testing evaluates code internals; functional testing evaluates behavior.</label><br>
+            <label><input type="radio" name="q14" value="b">Functional testing is done first, and structural testing follows.</label><br>
+            <label><input type="radio" name="q14" value="c">Structural testing is non-essential in modern systems.</label>
+        </div>
+
+        <div class="question">
+            <h3>15. Why is regression testing critical in maintenance testing?</h3>
+            <label><input type="radio" name="q15" value="a">It ensures that no new defects are introduced during maintenance.</label><br>
+            <label><input type="radio" name="q15" value="b">It verifies non-functional qualities like usability and security.</label><br>
+            <label><input type="radio" name="q15" value="c">It replaces other test types during system upgrades.</label>
+        </div>
+
+        <!-- Hard Questions -->
+        <div class="question">
+            <h3>16. What is the key benefit of early testing in the V-model?</h3>
+            <label><input type="radio" name="q16" value="a">It reduces overall costs by catching defects earlier.</label><br>
+            <label><input type="radio" name="q16" value="b">It eliminates the need for integration testing.</label><br>
+            <label><input type="radio" name="q16" value="c">It speeds up the development process by skipping unit tests.</label>
+        </div>
+
+        <div class="question">
+            <h3>17. Which type of testing is designed to uncover defects in internal program structure?</h3>
+            <label><input type="radio" name="q17" value="a">Functional testing.</label><br>
+            <label><input type="radio" name="q17" value="b">Structural testing.</label><br>
+            <label><input type="radio" name="q17" value="c">Acceptance testing.</label>
+        </div>
+
+        <div class="question">
+            <h3>18. In iterative development, how are testing activities typically conducted?</h3>
+            <label><input type="radio" name="q18" value="a">Testing is conducted at the end of all iterations.</label><br>
+            <label><input type="radio" name="q18" value="b">Testing is integrated within each iteration.</label><br>
+            <label><input type="radio" name="q18" value="c">Testing is only conducted for new features.</label>
+        </div>
+
+        <div class="question">
+            <h3>19. In Agile development, who is typically responsible for testing?</h3>
+            <label><input type="radio" name="q19" value="a">Only dedicated testers.</label><br>
+            <label><input type="radio" name="q19" value="b">Both developers and testers collaboratively.</label><br>
+            <label><input type="radio" name="q19" value="c">Only the product owner.</label>
+        </div>
+
+        <div class="question">
+            <h3>20. Which of the following is a key difference between functional and non-functional testing?</h3>
+            <label><input type="radio" name="q20" value="a">Functional testing verifies features, while non-functional testing evaluates qualities like performance and usability.</label><br>
+            <label><input type="radio" name="q20" value="b">Non-functional testing is only performed during maintenance.</label><br>
+            <label><input type="radio" name="q20" value="c">Functional testing focuses on performance metrics.</label>
+        </div>
+    </form>
+
+    <button type="button" onclick="gradeExam()">Submit</button>
+    <div id="result" class="result"></div>
+
+    <script>
+        function gradeExam() {
+            const answers = {
+                q1: 'b', q2: 'b', q3: 'b', q4: 'b', q5: 'b',
+                q6: 'b', q7: 'b', q8: 'b', q9: 'c', q10: 'b',
+                q11: 'b', q12: 'b', q13: 'c', q14: 'a', q15: 'a',
+                q16: 'a', q17: 'b', q18: 'b', q19: 'b', q20: 'a'
+            };
+            let score = 0;
+            const form = document.getElementById('exam-form');
+            const result = document.getElementById('result');
+            const userAnswers = new FormData(form);
+
+            for (const [question, answer] of Object.entries(answers)) {
+                if (userAnswers.get(question) === answer) {
+                    score++;
+                }
+            }
+
+            result.style.display = 'block';
+            result.innerHTML = `<h2>Your Score: ${score} / 20</h2>`;
+        }
+    </script>
+</body>
+</html>
