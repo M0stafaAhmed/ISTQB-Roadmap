@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISTQB Chapter 3: Static Testing Exam</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .question {
+            margin: 15px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .question h3 {
+            margin: 0 0 10px;
+        }
+        .result {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            border: 2px solid #4caf50;
+            border-radius: 5px;
+            background-color: #e8f5e9;
+        }
+        .result h2 {
+            margin: 0;
+            color: #4caf50;
+        }
+    </style>
+</head>
+<body>
+    <h1>ISTQB Chapter 3: Static Testing Exam</h1>
+    <form id="exam-form">
+        <!-- Easy Questions -->
+        <div class="question">
+            <h3>1. What is static testing?</h3>
+            <label><input type="radio" name="q1" value="a">Testing where code is executed.</label><br>
+            <label><input type="radio" name="q1" value="b">Testing that does not involve execution.</label><br>
+            <label><input type="radio" name="q1" value="c">Performance testing under high load.</label>
+        </div>
+
+        <div class="question">
+            <h3>2. Which is a key benefit of static testing?</h3>
+            <label><input type="radio" name="q2" value="a">Finds defects early and saves costs.</label><br>
+            <label><input type="radio" name="q2" value="b">Eliminates all defects completely.</label><br>
+            <label><input type="radio" name="q2" value="c">Ensures the system runs faster.</label>
+        </div>
+
+        <div class="question">
+            <h3>3. What is an example of static testing?</h3>
+            <label><input type="radio" name="q3" value="a">Running test cases on a web application.</label><br>
+            <label><input type="radio" name="q3" value="b">Code reviews and walkthroughs.</label><br>
+            <label><input type="radio" name="q3" value="c">Executing performance tests.</label>
+        </div>
+
+        <div class="question">
+            <h3>4. Which static testing method is the **least formal**?</h3>
+            <label><input type="radio" name="q4" value="a">Inspection</label><br>
+            <label><input type="radio" name="q4" value="b">Walkthrough</label><br>
+            <label><input type="radio" name="q4" value="c">Informal Review</label>
+        </div>
+
+        <div class="question">
+            <h3>5. What is the main purpose of a walkthrough?</h3>
+            <label><input type="radio" name="q5" value="a">The author explains their work and gets feedback.</label><br>
+            <label><input type="radio" name="q5" value="b">A strict formal review process.</label><br>
+            <label><input type="radio" name="q5" value="c">A performance test of an application.</label>
+        </div>
+
+        <!-- Medium Questions -->
+        <div class="question">
+            <h3>6. What distinguishes an inspection from a technical review?</h3>
+            <label><input type="radio" name="q6" value="a">Inspections are more formal and follow strict rules.</label><br>
+            <label><input type="radio" name="q6" value="b">Technical reviews are used for contract approvals.</label><br>
+            <label><input type="radio" name="q6" value="c">There is no difference between them.</label>
+        </div>
+
+        <div class="question">
+            <h3>7. Which tool is commonly used for static analysis?</h3>
+            <label><input type="radio" name="q7" value="a">SonarQube</label><br>
+            <label><input type="radio" name="q7" value="b">Selenium</label><br>
+            <label><input type="radio" name="q7" value="c">JUnit</label>
+        </div>
+
+        <div class="question">
+            <h3>8. What is a key drawback of static testing?</h3>
+            <label><input type="radio" name="q8" value="a">It cannot find runtime errors.</label><br>
+            <label><input type="radio" name="q8" value="b">It is more expensive than dynamic testing.</label><br>
+            <label><input type="radio" name="q8" value="c">It delays software development.</label>
+        </div>
+
+        <div class="question">
+            <h3>9. What is the focus of a technical review?</h3>
+            <label><input type="radio" name="q9" value="a">Ensuring industry standards and correctness.</label><br>
+            <label><input type="radio" name="q9" value="b">Finding minor typos.</label><br>
+            <label><input type="radio" name="q9" value="c">Testing system performance.</label>
+        </div>
+
+        <div class="question">
+            <h3>10. What is static analysis best suited for?</h3>
+            <label><input type="radio" name="q10" value="a">Finding syntax errors, security issues, and code complexity.</label><br>
+            <label><input type="radio" name="q10" value="b">Simulating high traffic on a server.</label><br>
+            <label><input type="radio" name="q10" value="c">Executing test scripts automatically.</label>
+        </div>
+    </form>
+
+    <button type="button" onclick="gradeExam()">Submit</button>
+    <div id="result" class="result"></div>
+
+    <script>
+        function gradeExam() {
+            const answers = {
+                q1: 'b', q2: 'a', q3: 'b', q4: 'c', q5: 'a',
+                q6: 'a', q7: 'a', q8: 'a', q9: 'a', q10: 'a'
+            };
+            let score = 0;
+            const form = document.getElementById('exam-form');
+            const result = document.getElementById('result');
+            const userAnswers = new FormData(form);
+
+            for (const [question, answer] of Object.entries(answers)) {
+                if (userAnswers.get(question) === answer) {
+                    score++;
+                }
+            }
+
+            result.style.display = 'block';
+            result.innerHTML = `<h2>Your Score: ${score} / 10</h2>`;
+        }
+    </script>
+</body>
+</html>
