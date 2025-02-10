@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISTQB Foundation Level Full Exam</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .question { margin: 15px 0; padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+        .question h3 { margin: 0 0 10px; }
+        .result { display: none; margin-top: 20px; padding: 10px; border: 2px solid #4caf50; border-radius: 5px; background-color: #e8f5e9; }
+        .result h2 { margin: 0; color: #4caf50; }
+    </style>
+</head>
+<body>
+    <h1>ISTQB Foundation Level Full Exam (100 Questions)</h1>
+    <form id="exam-form">
+<!-- Chapter 1: Fundamentals of Testing (Questions 1-10) -->
+<div class="question">
+    <h3>1. What is the primary goal of software testing?</h3>
+    <label><input type="radio" name="q1" value="a">To prove that software is defect-free.</label><br>
+    <label><input type="radio" name="q1" value="b">To find defects and improve quality.</label><br>
+    <label><input type="radio" name="q1" value="c">To speed up software development.</label>
+</div>
+
+<div class="question">
+    <h3>2. What is the difference between validation and verification?</h3>
+    <label><input type="radio" name="q2" value="a">Validation ensures the product meets user needs; verification ensures it meets specifications.</label><br>
+    <label><input type="radio" name="q2" value="b">Verification is done by users; validation is done by developers.</label><br>
+    <label><input type="radio" name="q2" value="c">There is no difference.</label>
+</div>
+
+<div class="question">
+    <h3>3. When should testing activities start in the software development lifecycle?</h3>
+    <label><input type="radio" name="q3" value="a">As early as possible.</label><br>
+    <label><input type="radio" name="q3" value="b">After coding is completed.</label><br>
+    <label><input type="radio" name="q3" value="c">Only during system testing.</label>
+</div>
+
+<div class="question">
+    <h3>4. Which of the following is a principle of testing?</h3>
+    <label><input type="radio" name="q4" value="a">Exhaustive testing is possible.</label><br>
+    <label><input type="radio" name="q4" value="b">Testing shows the presence of defects.</label><br>
+    <label><input type="radio" name="q4" value="c">More testing always means better quality.</label>
+</div>
+
+<div class="question">
+    <h3>5. What is a key advantage of early testing?</h3>
+    <label><input type="radio" name="q5" value="a">It is more expensive but prevents bugs.</label><br>
+    <label><input type="radio" name="q5" value="b">It helps detect defects early and reduces costs.</label><br>
+    <label><input type="radio" name="q5" value="c">It eliminates all bugs.</label>
+</div>
+
+<div class="question">
+    <h3>6. What is regression testing?</h3>
+    <label><input type="radio" name="q6" value="a">Testing done after bug fixes to ensure no new issues arise.</label><br>
+    <label><input type="radio" name="q6" value="b">Testing done only in the final phase of development.</label><br>
+    <label><input type="radio" name="q6" value="c">Testing performed by developers only.</label>
+</div>
+
+<div class="question">
+    <h3>7. What is the main goal of acceptance testing?</h3>
+    <label><input type="radio" name="q7" value="a">To validate that the software meets business requirements.</label><br>
+    <label><input type="radio" name="q7" value="b">To check for security vulnerabilities.</label><br>
+    <label><input type="radio" name="q7" value="c">To ensure code is properly written.</label>
+</div>
+
+<div class="question">
+    <h3>8. What is the pesticide paradox in testing?</h3>
+    <label><input type="radio" name="q8" value="a">The same test cases eventually stop finding new defects.</label><br>
+    <label><input type="radio" name="q8" value="b">All bugs can be eliminated with enough testing.</label><br>
+    <label><input type="radio" name="q8" value="c">Only developers can perform good testing.</label>
+</div>
+
+<div class="question">
+    <h3>9. What is the primary purpose of debugging?</h3>
+    <label><input type="radio" name="q9" value="a">To test software.</label><br>
+    <label><input type="radio" name="q9" value="b">To find and fix defects in code.</label><br>
+    <label><input type="radio" name="q9" value="c">To execute test cases.</label>
+</div>
+
+<div class="question">
+    <h3>10. Why is exhaustive testing impractical?</h3>
+    <label><input type="radio" name="q10" value="a">It is too expensive and time-consuming.</label><br>
+    <label><input type="radio" name="q10" value="b">It does not find all defects.</label><br>
+    <label><input type="radio" name="q10" value="c">It is unnecessary for critical systems.</label>
+</div>
+<!-- Chapter 2: Testing Throughout the Software Lifecycle (Questions 11-20) -->
+<div class="question">
+    <h3>11. What is the primary purpose of unit testing?</h3>
+    <label><input type="radio" name="q11" value="a">To test how different components interact.</label><br>
+    <label><input type="radio" name="q11" value="b">To verify individual components in isolation.</label><br>
+    <label><input type="radio" name="q11" value="c">To validate user requirements.</label>
+</div>
+
+<div class="question">
+    <h3>12. What is the main focus of integration testing?</h3>
+    <label><input type="radio" name="q12" value="a">Checking the correct interaction between integrated components.</label><br>
+    <label><input type="radio" name="q12" value="b">Ensuring the entire system meets user requirements.</label><br>
+    <label><input type="radio" name="q12" value="c">Validating the source code structure.</label>
+</div>
+
+<div class="question">
+    <h3>13. What type of testing ensures that a system meets business needs?</h3>
+    <label><input type="radio" name="q13" value="a">Acceptance Testing</label><br>
+    <label><input type="radio" name="q13" value="b">System Testing</label><br>
+    <label><input type="radio" name="q13" value="c">Unit Testing</label>
+</div>
+
+<div class="question">
+    <h3>14. Which test level is typically performed by end users?</h3>
+    <label><input type="radio" name="q14" value="a">Integration Testing</label><br>
+    <label><input type="radio" name="q14" value="b">Acceptance Testing</label><br>
+    <label><input type="radio" name="q14" value="c">Unit Testing</label>
+</div>
+
+<div class="question">
+    <h3>15. What is the primary goal of system testing?</h3>
+    <label><input type="radio" name="q15" value="a">To test individual modules of the system.</label><br>
+    <label><input type="radio" name="q15" value="b">To verify that the entire system functions as expected.</label><br>
+    <label><input type="radio" name="q15" value="c">To check the correctness of a single function.</label>
+</div>
+
+<div class="question">
+    <h3>16. What is the main focus of maintenance testing?</h3>
+    <label><input type="radio" name="q16" value="a">Testing new features only.</label><br>
+    <label><input type="radio" name="q16" value="b">Ensuring that existing features still work after changes.</label><br>
+    <label><input type="radio" name="q16" value="c">Finding as many defects as possible.</label>
+</div>
+
+<div class="question">
+    <h3>17. What is regression testing?</h3>
+    <label><input type="radio" name="q17" value="a">Testing done after changes to ensure no new defects were introduced.</label><br>
+    <label><input type="radio" name="q17" value="b">Testing done before the first release.</label><br>
+    <label><input type="radio" name="q17" value="c">Testing that only focuses on performance.</label>
+</div>
+
+<div class="question">
+    <h3>18. What is the purpose of smoke testing?</h3>
+    <label><input type="radio" name="q18" value="a">To check if the most critical functionalities of a build work.</label><br>
+    <label><input type="radio" name="q18" value="b">To perform exhaustive testing.</label><br>
+    <label><input type="radio" name="q18" value="c">To ensure the software runs on different operating systems.</label>
+</div>
+
+<div class="question">
+    <h3>19. Which test level typically finds defects in the interaction between integrated components?</h3>
+    <label><input type="radio" name="q19" value="a">System Testing</label><br>
+    <label><input type="radio" name="q19" value="b">Integration Testing</label><br>
+    <label><input type="radio" name="q19" value="c">Unit Testing</label>
+</div>
+
+<div class="question">
+    <h3>20. When is acceptance testing typically performed?</h3>
+    <label><input type="radio" name="q20" value="a">After system testing.</label><br>
+    <label><input type="radio" name="q20" value="b">Before unit testing.</label><br>
+    <label><input type="radio" name="q20" value="c">At the start of development.</label>
+</div>
+<!-- Chapter 3: Static Testing (Questions 21-30) -->
+<div class="question">
+    <h3>21. What is static testing?</h3>
+    <label><input type="radio" name="q21" value="a">Testing that involves executing the code.</label><br>
+    <label><input type="radio" name="q21" value="b">Testing that does not require executing the code.</label><br>
+    <label><input type="radio" name="q21" value="c">A type of performance testing.</label>
+</div>
+
+<div class="question">
+    <h3>22. What is a key benefit of static testing?</h3>
+    <label><input type="radio" name="q22" value="a">It finds defects early in the development lifecycle.</label><br>
+    <label><input type="radio" name="q22" value="b">It eliminates the need for test execution.</label><br>
+    <label><input type="radio" name="q22" value="c">It ensures that the software has no defects.</label>
+</div>
+
+<div class="question">
+    <h3>23. What is an informal review?</h3>
+    <label><input type="radio" name="q23" value="a">A structured review with a defined process.</label><br>
+    <label><input type="radio" name="q23" value="b">A quick and casual check for obvious defects.</label><br>
+    <label><input type="radio" name="q23" value="c">A type of security testing.</label>
+</div>
+
+<div class="question">
+    <h3>24. What is the most formal type of static testing?</h3>
+    <label><input type="radio" name="q24" value="a">Inspection</label><br>
+    <label><input type="radio" name="q24" value="b">Walkthrough</label><br>
+    <label><input type="radio" name="q24" value="c">Technical Review</label>
+</div>
+
+<div class="question">
+    <h3>25. What is the primary goal of a walkthrough?</h3>
+    <label><input type="radio" name="q25" value="a">To perform security penetration testing.</label><br>
+    <label><input type="radio" name="q25" value="b">To allow the author to explain the document and get feedback.</label><br>
+    <label><input type="radio" name="q25" value="c">To ensure the software is optimized for performance.</label>
+</div>
+
+<div class="question">
+    <h3>26. What is the difference between a technical review and an inspection?</h3>
+    <label><input type="radio" name="q26" value="a">Inspections are more formal and structured than technical reviews.</label><br>
+    <label><input type="radio" name="q26" value="b">Technical reviews focus only on code, while inspections focus on documentation.</label><br>
+    <label><input type="radio" name="q26" value="c">There is no difference between them.</label>
+</div>
+
+<div class="question">
+    <h3>27. What is static analysis used for?</h3>
+    <label><input type="radio" name="q27" value="a">To detect defects without executing code.</label><br>
+    <label><input type="radio" name="q27" value="b">To find defects by running functional tests.</label><br>
+    <label><input type="radio" name="q27" value="c">To evaluate system performance.</label>
+</div>
+
+<div class="question">
+    <h3>28. What tool is commonly used for static code analysis?</h3>
+    <label><input type="radio" name="q28" value="a">JUnit</label><br>
+    <label><input type="radio" name="q28" value="b">SonarQube</label><br>
+    <label><input type="radio" name="q28" value="c">JMeter</label>
+</div>
+
+<div class="question">
+    <h3>29. What is the primary objective of defect prevention in static testing?</h3>
+    <label><input type="radio" name="q29" value="a">To reduce the number of defects found in later stages.</label><br>
+    <label><input type="radio" name="q29" value="b">To eliminate the need for dynamic testing.</label><br>
+    <label><input type="radio" name="q29" value="c">To find and report all defects immediately.</label>
+</div>
+
+<div class="question">
+    <h3>30. What is a benefit of using static testing in the early development stages?</h3>
+    <label><input type="radio" name="q30" value="a">It reduces the cost of fixing defects later.</label><br>
+    <label><input type="radio" name="q30" value="b">It ensures the system runs faster.</label><br>
+    <label><input type="radio" name="q30" value="c">It eliminates the need for system testing.</label>
+</div>
+<!-- Chapter 4: Test Design Techniques (Questions 31-40) -->
+<div class="question">
+    <h3>31. What is the purpose of test design techniques?</h3>
+    <label><input type="radio" name="q31" value="a">To randomly execute test cases.</label><br>
+    <label><input type="radio" name="q31" value="b">To create structured and efficient test cases.</label><br>
+    <label><input type="radio" name="q31" value="c">To eliminate the need for developers.</label>
+</div>
+
+<div class="question">
+    <h3>32. What is equivalence partitioning?</h3>
+    <label><input type="radio" name="q32" value="a">A technique that tests every possible input.</label><br>
+    <label><input type="radio" name="q32" value="b">A technique that divides inputs into groups that should behave the same.</label><br>
+    <label><input type="radio" name="q32" value="c">A method used for only security testing.</label>
+</div>
+
+<div class="question">
+    <h3>33. What is boundary value analysis (BVA)?</h3>
+    <label><input type="radio" name="q33" value="a">A technique that tests values at the edges of valid and invalid input ranges.</label><br>
+    <label><input type="radio" name="q33" value="b">A technique that only tests the middle of input values.</label><br>
+    <label><input type="radio" name="q33" value="c">A testing method used only for user interface testing.</label>
+</div>
+
+<div class="question">
+    <h3>34. What is the primary use of decision table testing?</h3>
+    <label><input type="radio" name="q34" value="a">To test complex business rules with multiple conditions.</label><br>
+    <label><input type="radio" name="q34" value="b">To measure page load time.</label><br>
+    <label><input type="radio" name="q34" value="c">To test security vulnerabilities.</label>
+</div>
+
+<div class="question">
+    <h3>35. What does state transition testing help validate?</h3>
+    <label><input type="radio" name="q35" value="a">The behavior of a system when transitioning between states.</label><br>
+    <label><input type="radio" name="q35" value="b">Whether all code paths have been executed.</label><br>
+    <label><input type="radio" name="q35" value="c">The security encryption of a system.</label>
+</div>
+
+<div class="question">
+    <h3>36. What is statement coverage?</h3>
+    <label><input type="radio" name="q36" value="a">A white-box testing technique that ensures every line of code is executed at least once.</label><br>
+    <label><input type="radio" name="q36" value="b">A technique that tests application performance.</label><br>
+    <label><input type="radio" name="q36" value="c">A type of exploratory testing.</label>
+</div>
+
+<div class="question">
+    <h3>37. What is branch coverage?</h3>
+    <label><input type="radio" name="q37" value="a">A technique that ensures every possible branch of decision logic is executed.</label><br>
+    <label><input type="radio" name="q37" value="b">A technique that tests system usability.</label><br>
+    <label><input type="radio" name="q37" value="c">A method used for automating UI tests.</label>
+</div>
+
+<div class="question">
+    <h3>38. What is error guessing?</h3>
+    <label><input type="radio" name="q38" value="a">A technique where testers use experience and intuition to find defects.</label><br>
+    <label><input type="radio" name="q38" value="b">A systematic method for identifying defects.</label><br>
+    <label><input type="radio" name="q38" value="c">A process that eliminates the need for test execution.</label>
+</div>
+
+<div class="question">
+    <h3>39. What is exploratory testing?</h3>
+    <label><input type="radio" name="q39" value="a">A testing approach where test cases are designed and executed simultaneously.</label><br>
+    <label><input type="radio" name="q39" value="b">A formal technique requiring predefined test cases.</label><br>
+    <label><input type="radio" name="q39" value="c">A method used only in performance testing.</label>
+</div>
+
+<div class="question">
+    <h3>40. What is the main difference between black-box and white-box testing?</h3>
+    <label><input type="radio" name="q40" value="a">Black-box testing focuses on system behavior, while white-box testing examines internal code structure.</label><br>
+    <label><input type="radio" name="q40" value="b">White-box testing is only performed by developers.</label><br>
+    <label><input type="radio" name="q40" value="c">Black-box testing requires knowledge of source code.</label>
+</div>
+<!-- Chapter 5: Test Management (Questions 41-50) -->
+<div class="question">
+    <h3>41. What is the main purpose of test management?</h3>
+    <label><input type="radio" name="q41" value="a">To control and organize the testing process.</label><br>
+    <label><input type="radio" name="q41" value="b">To execute test scripts.</label><br>
+    <label><input type="radio" name="q41" value="c">To write code for automation testing.</label>
+</div>
+
+<div class="question">
+    <h3>42. Who is responsible for planning and controlling test activities?</h3>
+    <label><input type="radio" name="q42" value="a">Test Analyst</label><br>
+    <label><input type="radio" name="q42" value="b">Test Manager</label><br>
+    <label><input type="radio" name="q42" value="c">Developer</label>
+</div>
+
+<div class="question">
+    <h3>43. What is a test plan?</h3>
+    <label><input type="radio" name="q43" value="a">A document that outlines the scope, approach, and schedule of testing activities.</label><br>
+    <label><input type="radio" name="q43" value="b">A test case repository.</label><br>
+    <label><input type="radio" name="q43" value="c">A tool for executing test scripts.</label>
+</div>
+
+<div class="question">
+    <h3>44. What does test monitoring involve?</h3>
+    <label><input type="radio" name="q44" value="a">Tracking test progress and identifying potential risks.</label><br>
+    <label><input type="radio" name="q44" value="b">Writing test scripts.</label><br>
+    <label><input type="radio" name="q44" value="c">Ensuring every test case is automated.</label>
+</div>
+
+<div class="question">
+    <h3>45. What is test control?</h3>
+    <label><input type="radio" name="q45" value="a">Taking action to adjust testing activities based on test monitoring results.</label><br>
+    <label><input type="radio" name="q45" value="b">Executing all test cases in parallel.</label><br>
+    <label><input type="radio" name="q45" value="c">Skipping documentation to speed up testing.</label>
+</div>
+
+<div class="question">
+    <h3>46. What is configuration management in testing?</h3>
+    <label><input type="radio" name="q46" value="a">Managing test artifacts, versions, and documentation.</label><br>
+    <label><input type="radio" name="q46" value="b">Tracking system performance under load.</label><br>
+    <label><input type="radio" name="q46" value="c">Automating UI test execution.</label>
+</div>
+
+<div class="question">
+    <h3>47. What is the goal of risk-based testing?</h3>
+    <label><input type="radio" name="q47" value="a">Prioritizing test cases based on impact and likelihood of failure.</label><br>
+    <label><input type="radio" name="q47" value="b">Testing only the most commonly used features.</label><br>
+    <label><input type="radio" name="q47" value="c">Ensuring that all test cases are executed equally.</label>
+</div>
+
+<div class="question">
+    <h3>48. What is a product risk in testing?</h3>
+    <label><input type="radio" name="q48" value="a">A risk related to software defects or failures.</label><br>
+    <label><input type="radio" name="q48" value="b">A risk that only affects test execution time.</label><br>
+    <label><input type="radio" name="q48" value="c">A risk related to missing test documentation.</label>
+</div>
+
+<div class="question">
+    <h3>49. What is a project risk in testing?</h3>
+    <label><input type="radio" name="q49" value="a">A risk that affects the project's success, such as tight deadlines or lack of resources.</label><br>
+    <label><input type="radio" name="q49" value="b">A risk that affects the database schema.</label><br>
+    <label><input type="radio" name="q49" value="c">A risk that impacts system performance.</label>
+</div>
+
+<div class="question">
+    <h3>50. What should be done if a high-risk feature fails testing?</h3>
+    <label><input type="radio" name="q50" value="a">Report it immediately and prioritize fixing it.</label><br>
+    <label><input type="radio" name="q50" value="b">Ignore it if other features work.</label><br>
+    <label><input type="radio" name="q50" value="c">Proceed with deployment.</label>
+</div>
+
+<!-- Chapter 6: Tool Support for Testing (Questions 51-60) -->
+<div class="question">
+    <h3>51. What is the main purpose of using testing tools?</h3>
+    <label><input type="radio" name="q51" value="a">To improve efficiency and accuracy in the testing process.</label><br>
+    <label><input type="radio" name="q51" value="b">To eliminate the need for manual testing.</label><br>
+    <label><input type="radio" name="q51" value="c">To replace developers with automated scripts.</label>
+</div>
+
+<div class="question">
+    <h3>52. Which type of tool is used to manage test cases and track defects?</h3>
+    <label><input type="radio" name="q52" value="a">Test Management Tool</label><br>
+    <label><input type="radio" name="q52" value="b">Performance Testing Tool</label><br>
+    <label><input type="radio" name="q52" value="c">Security Testing Tool</label>
+</div>
+
+<div class="question">
+    <h3>53. What is a static analysis tool used for?</h3>
+    <label><input type="radio" name="q53" value="a">Checking code quality without executing it.</label><br>
+    <label><input type="radio" name="q53" value="b">Running performance tests under high load.</label><br>
+    <label><input type="radio" name="q53" value="c">Managing test cases.</label>
+</div>
+
+<div class="question">
+    <h3>54. Which tool is commonly used for automated functional testing?</h3>
+    <label><input type="radio" name="q54" value="a">Selenium</label><br>
+    <label><input type="radio" name="q54" value="b">JMeter</label><br>
+    <label><input type="radio" name="q54" value="c">SonarQube</label>
+</div>
+
+<div class="question">
+    <h3>55. What is the main advantage of test automation?</h3>
+    <label><input type="radio" name="q55" value="a">Faster execution and repeatability of tests.</label><br>
+    <label><input type="radio" name="q55" value="b">It eliminates all software defects.</label><br>
+    <label><input type="radio" name="q55" value="c">It replaces all manual testing efforts.</label>
+</div>
+
+<div class="question">
+    <h3>56. What is a major risk of test automation?</h3>
+    <label><input type="radio" name="q56" value="a">High maintenance cost for test scripts.</label><br>
+    <label><input type="radio" name="q56" value="b">It is slower than manual testing.</label><br>
+    <label><input type="radio" name="q56" value="c">It eliminates the need for test planning.</label>
+</div>
+
+<div class="question">
+    <h3>57. What type of tool is JMeter?</h3>
+    <label><input type="radio" name="q57" value="a">Performance Testing Tool</label><br>
+    <label><input type="radio" name="q57" value="b">Security Testing Tool</label><br>
+    <label><input type="radio" name="q57" value="c">Unit Testing Framework</label>
+</div>
+
+<div class="question">
+    <h3>58. What should be the first step in introducing a new testing tool into an organization?</h3>
+    <label><input type="radio" name="q58" value="a">Analyze the organization's needs and define objectives.</label><br>
+    <label><input type="radio" name="q58" value="b">Purchase the tool immediately.</label><br>
+    <label><input type="radio" name="q58" value="c">Force all testers to start using it immediately.</label>
+</div>
+
+<div class="question">
+    <h3>59. Why can't all tests be automated?</h3>
+    <label><input type="radio" name="q59" value="a">Some tests require human judgment, such as usability testing.</label><br>
+    <label><input type="radio" name="q59" value="b">Automation tools are too expensive for all testing activities.</label><br>
+    <label><input type="radio" name="q59" value="c">Manual testing is always better than automation.</label>
+</div>
+
+<div class="question">
+    <h3>60. What is a security testing tool used for?</h3>
+    <label><input type="radio" name="q60" value="a">Identifying vulnerabilities and security flaws in software.</label><br>
+    <label><input type="radio" name="q60" value="b">Managing test cases and execution.</label><br>
+    <label><input type="radio" name="q60" value="c">Ensuring the fastest execution time of a test suite.</label>
+</div>
+<!-- Chapter 1 & SDLC Concepts (Questions 61-70) -->
+<div class="question">
+    <h3>61. What is the difference between functional and non-functional testing?</h3>
+    <label><input type="radio" name="q61" value="a">Functional testing checks features, non-functional testing checks performance and security.</label><br>
+    <label><input type="radio" name="q61" value="b">Functional testing is manual, non-functional testing is automated.</label><br>
+    <label><input type="radio" name="q61" value="c">There is no difference.</label>
+</div>
+
+<div class="question">
+    <h3>62. Which of the following is a black-box testing technique?</h3>
+    <label><input type="radio" name="q62" value="a">Statement Coverage</label><br>
+    <label><input type="radio" name="q62" value="b">Equivalence Partitioning</label><br>
+    <label><input type="radio" name="q62" value="c">Branch Coverage</label>
+</div>
+
+<div class="question">
+    <h3>63. What is a common objective of integration testing?</h3>
+    <label><input type="radio" name="q63" value="a">To verify data flow and interaction between modules.</label><br>
+    <label><input type="radio" name="q63" value="b">To check the correctness of individual components.</label><br>
+    <label><input type="radio" name="q63" value="c">To validate system performance.</label>
+</div>
+
+<div class="question">
+    <h3>64. What is the main reason to use risk-based testing?</h3>
+    <label><input type="radio" name="q64" value="a">To prioritize testing based on potential business impact.</label><br>
+    <label><input type="radio" name="q64" value="b">To test only high-priority defects.</label><br>
+    <label><input type="radio" name="q64" value="c">To reduce the number of test cases needed.</label>
+</div>
+
+<div class="question">
+    <h3>65. What type of testing ensures that software meets regulatory and compliance requirements?</h3>
+    <label><input type="radio" name="q65" value="a">Usability Testing</label><br>
+    <label><input type="radio" name="q65" value="b">Compliance Testing</label><br>
+    <label><input type="radio" name="q65" value="c">Performance Testing</label>
+</div>
+
+<div class="question">
+    <h3>66. What is exploratory testing best suited for?</h3>
+    <label><input type="radio" name="q66" value="a">Finding defects by simultaneously learning, designing, and executing tests.</label><br>
+    <label><input type="radio" name="q66" value="b">Running pre-written test scripts.</label><br>
+    <label><input type="radio" name="q66" value="c">Checking system performance.</label>
+</div>
+
+<div class="question">
+    <h3>67. What is a test oracle?</h3>
+    <label><input type="radio" name="q67" value="a">A mechanism for predicting expected test results.</label><br>
+    <label><input type="radio" name="q67" value="b">A tool for executing test cases.</label><br>
+    <label><input type="radio" name="q67" value="c">A type of performance monitoring.</label>
+</div>
+
+<div class="question">
+    <h3>68. What is meant by "test environment"?</h3>
+    <label><input type="radio" name="q68" value="a">A controlled setup where testing is executed.</label><br>
+    <label><input type="radio" name="q68" value="b">A technique for tracking test cases.</label><br>
+    <label><input type="radio" name="q68" value="c">A document that outlines test execution steps.</label>
+</div>
+
+<div class="question">
+    <h3>69. What is the best definition of a defect?</h3>
+    <label><input type="radio" name="q69" value="a">A flaw in software that causes incorrect results.</label><br>
+    <label><input type="radio" name="q69" value="b">A missing test case.</label><br>
+    <label><input type="radio" name="q69" value="c">A minor formatting issue.</label>
+</div>
+
+<div class="question">
+    <h3>70. When should regression testing be performed?</h3>
+    <label><input type="radio" name="q70" value="a">After making changes to the code.</label><br>
+    <label><input type="radio" name="q70" value="b">Only before the first release.</label><br>
+    <label><input type="radio" name="q70" value="c">After system performance testing.</label>
+</div>
+<!-- Chapter 4 & Advanced Topics (Questions 71-80) -->
+<div class="question">
+    <h3>71. What is the purpose of usability testing?</h3>
+    <label><input type="radio" name="q71" value="a">To check how user-friendly and intuitive the system is.</label><br>
+    <label><input type="radio" name="q71" value="b">To test the system's security vulnerabilities.</label><br>
+    <label><input type="radio" name="q71" value="c">To verify the speed of the application.</label>
+</div>
+
+<div class="question">
+    <h3>72. What is an equivalence partition in equivalence partitioning?</h3>
+    <label><input type="radio" name="q72" value="a">A group of inputs expected to behave similarly.</label><br>
+    <label><input type="radio" name="q72" value="b">A set of unrelated test cases.</label><br>
+    <label><input type="radio" name="q72" value="c">A technique used only for performance testing.</label>
+</div>
+
+<div class="question">
+    <h3>73. Why is boundary value analysis important?</h3>
+    <label><input type="radio" name="q73" value="a">Defects often occur at input boundaries.</label><br>
+    <label><input type="radio" name="q73" value="b">It replaces exploratory testing.</label><br>
+    <label><input type="radio" name="q73" value="c">It focuses only on functional testing.</label>
+</div>
+
+<div class="question">
+    <h3>74. What is the key benefit of decision table testing?</h3>
+    <label><input type="radio" name="q74" value="a">It helps test systems with complex business rules.</label><br>
+    <label><input type="radio" name="q74" value="b">It focuses on testing user interfaces.</label><br>
+    <label><input type="radio" name="q74" value="c">It ensures all test cases are automated.</label>
+</div>
+
+<div class="question">
+    <h3>75. What is the purpose of state transition testing?</h3>
+    <label><input type="radio" name="q75" value="a">To validate system behavior as it transitions between states.</label><br>
+    <label><input type="radio" name="q75" value="b">To check all statements in the source code.</label><br>
+    <label><input type="radio" name="q75" value="c">To verify test automation scripts.</label>
+</div>
+
+<div class="question">
+    <h3>76. What is the main purpose of pairwise testing?</h3>
+    <label><input type="radio" name="q76" value="a">To reduce test cases while ensuring coverage of input combinations.</label><br>
+    <label><input type="radio" name="q76" value="b">To test software with two testers simultaneously.</label><br>
+    <label><input type="radio" name="q76" value="c">To validate every test case in an exhaustive way.</label>
+</div>
+
+<div class="question">
+    <h3>77. Which of the following is a key characteristic of exploratory testing?</h3>
+    <label><input type="radio" name="q77" value="a">Test cases are not predefined.</label><br>
+    <label><input type="radio" name="q77" value="b">It only applies to white-box testing.</label><br>
+    <label><input type="radio" name="q77" value="c">It requires a fully automated environment.</label>
+</div>
+
+<div class="question">
+    <h3>78. What is mutation testing?</h3>
+    <label><input type="radio" name="q78" value="a">A technique that modifies code slightly to check if test cases detect the change.</label><br>
+    <label><input type="radio" name="q78" value="b">A method of testing performance.</label><br>
+    <label><input type="radio" name="q78" value="c">A technique used only for security testing.</label>
+</div>
+
+<div class="question">
+    <h3>79. What is the main goal of combinatorial testing?</h3>
+    <label><input type="radio" name="q79" value="a">To test multiple parameter combinations efficiently.</label><br>
+    <label><input type="radio" name="q79" value="b">To test only the most used features of an application.</label><br>
+    <label><input type="radio" name="q79" value="c">To automate every test case.</label>
+</div>
+
+<div class="question">
+    <h3>80. What is fault injection testing?</h3>
+    <label><input type="radio" name="q80" value="a">A technique where faults are introduced to check system behavior.</label><br>
+    <label><input type="radio" name="q80" value="b">A type of exploratory testing.</label><br>
+    <label><input type="radio" name="q80" value="c">A method used only for UI testing.</label>
+</div>
+<!-- Chapter 6 & Advanced Testing Topics (Questions 81-90) -->
+<div class="question">
+    <h3>81. What is the main objective of performance testing?</h3>
+    <label><input type="radio" name="q81" value="a">To check if the system can handle expected loads.</label><br>
+    <label><input type="radio" name="q81" value="b">To verify database structure.</label><br>
+    <label><input type="radio" name="q81" value="c">To find user interface defects.</label>
+</div>
+
+<div class="question">
+    <h3>82. What is the purpose of load testing?</h3>
+    <label><input type="radio" name="q82" value="a">To test system behavior under normal and peak load conditions.</label><br>
+    <label><input type="radio" name="q82" value="b">To execute every test case multiple times.</label><br>
+    <label><input type="radio" name="q82" value="c">To find UI design flaws.</label>
+</div>
+
+<div class="question">
+    <h3>83. What is stress testing?</h3>
+    <label><input type="radio" name="q83" value="a">Testing a system under extreme conditions.</label><br>
+    <label><input type="radio" name="q83" value="b">Checking how the UI responds to user inputs.</label><br>
+    <label><input type="radio" name="q83" value="c">Validating only functional requirements.</label>
+</div>
+
+<div class="question">
+    <h3>84. What is scalability testing?</h3>
+    <label><input type="radio" name="q84" value="a">To check how the system performs as resources increase.</label><br>
+    <label><input type="radio" name="q84" value="b">To find usability issues.</label><br>
+    <label><input type="radio" name="q84" value="c">To execute exploratory test cases.</label>
+</div>
+
+<div class="question">
+    <h3>85. What is penetration testing?</h3>
+    <label><input type="radio" name="q85" value="a">A security test that simulates an attack.</label><br>
+    <label><input type="radio" name="q85" value="b">A technique to test UI responsiveness.</label><br>
+    <label><input type="radio" name="q85" value="c">A way to check system performance.</label>
+</div>
+
+<div class="question">
+    <h3>86. What is fuzz testing?</h3>
+    <label><input type="radio" name="q86" value="a">A security testing method where invalid or random data is input to find vulnerabilities.</label><br>
+    <label><input type="radio" name="q86" value="b">A technique used for UI testing.</label><br>
+    <label><input type="radio" name="q86" value="c">A process for improving database queries.</label>
+</div>
+
+<div class="question">
+    <h3>87. What is the purpose of compliance testing?</h3>
+    <label><input type="radio" name="q87" value="a">To ensure the software meets regulatory and legal requirements.</label><br>
+    <label><input type="radio" name="q87" value="b">To check system usability.</label><br>
+    <label><input type="radio" name="q87" value="c">To automate security test cases.</label>
+</div>
+
+<div class="question">
+    <h3>88. What is the main difference between functional and non-functional testing?</h3>
+    <label><input type="radio" name="q88" value="a">Functional testing checks what the system does, non-functional testing checks how it performs.</label><br>
+    <label><input type="radio" name="q88" value="b">Functional testing is manual, non-functional testing is automated.</label><br>
+    <label><input type="radio" name="q88" value="c">There is no difference.</label>
+</div>
+
+<div class="question">
+    <h3>89. What is the key goal of security testing?</h3>
+    <label><input type="radio" name="q89" value="a">To identify and fix security vulnerabilities.</label><br>
+    <label><input type="radio" name="q89" value="b">To improve application speed.</label><br>
+    <label><input type="radio" name="q89" value="c">To validate user experience design.</label>
+</div>
+
+<div class="question">
+    <h3>90. What is recovery testing?</h3>
+    <label><input type="radio" name="q90" value="a">A type of testing that checks how well a system recovers from failures.</label><br>
+    <label><input type="radio" name="q90" value="b">A technique to verify UI responsiveness.</label><br>
+    <label><input type="radio" name="q90" value="c">A method used for verifying functional test cases.</label>
+</div>
+<!-- Chapter 6 & Best Practices (Questions 91-100) -->
+<div class="question">
+    <h3>91. What is maintainability testing?</h3>
+    <label><input type="radio" name="q91" value="a">Testing how easy it is to modify the software.</label><br>
+    <label><input type="radio" name="q91" value="b">Checking if the system can handle multiple users.</label><br>
+    <label><input type="radio" name="q91" value="c">Testing the UI layout.</label>
+</div>
+
+<div class="question">
+    <h3>92. What is portability testing?</h3>
+    <label><input type="radio" name="q92" value="a">Verifying how well the software works in different environments.</label><br>
+    <label><input type="radio" name="q92" value="b">Checking system security vulnerabilities.</label><br>
+    <label><input type="radio" name="q92" value="c">Measuring CPU usage of an application.</label>
+</div>
+
+<div class="question">
+    <h3>93. What is the purpose of beta testing?</h3>
+    <label><input type="radio" name="q93" value="a">Allowing real users to test the software before final release.</label><br>
+    <label><input type="radio" name="q93" value="b">Checking for security vulnerabilities.</label><br>
+    <label><input type="radio" name="q93" value="c">Measuring the application's load time.</label>
+</div>
+
+<div class="question">
+    <h3>94. What is A/B testing?</h3>
+    <label><input type="radio" name="q94" value="a">A technique to compare two versions of a webpage or feature.</label><br>
+    <label><input type="radio" name="q94" value="b">A security testing technique.</label><br>
+    <label><input type="radio" name="q94" value="c">A test used only in automation.</label>
+</div>
+
+<div class="question">
+    <h3>95. What is alpha testing?</h3>
+    <label><input type="radio" name="q95" value="a">Testing performed by internal users before beta testing.</label><br>
+    <label><input type="radio" name="q95" value="b">Testing the speed of the database.</label><br>
+    <label><input type="radio" name="q95" value="c">Measuring CPU and memory performance.</label>
+</div>
+
+<div class="question">
+    <h3>96. What is the primary benefit of using a test automation framework?</h3>
+    <label><input type="radio" name="q96" value="a">It standardizes test execution and improves efficiency.</label><br>
+    <label><input type="radio" name="q96" value="b">It eliminates the need for manual testing.</label><br>
+    <label><input type="radio" name="q96" value="c">It removes the need for test planning.</label>
+</div>
+
+<div class="question">
+    <h3>97. What is the role of a test environment?</h3>
+    <label><input type="radio" name="q97" value="a">Providing a controlled setup for executing test cases.</label><br>
+    <label><input type="radio" name="q97" value="b">Only used for performance testing.</label><br>
+    <label><input type="radio" name="q97" value="c">Only required for security testing.</label>
+</div>
+
+<div class="question">
+    <h3>98. What is the primary goal of defect tracking?</h3>
+    <label><input type="radio" name="q98" value="a">To monitor, report, and manage software defects efficiently.</label><br>
+    <label><input type="radio" name="q98" value="b">To eliminate all defects in the first test cycle.</label><br>
+    <label><input type="radio" name="q98" value="c">To validate software performance.</label>
+</div>
+
+<div class="question">
+    <h3>99. What is the importance of test reporting?</h3>
+    <label><input type="radio" name="q99" value="a">To communicate test progress, defects, and outcomes to stakeholders.</label><br>
+    <label><input type="radio" name="q99" value="b">To replace all manual documentation.</label><br>
+    <label><input type="radio" name="q99" value="c">To reduce the need for test execution.</label>
+</div>
+
+<div class="question">
+    <h3>100. Why is continuous testing important in DevOps?</h3>
+    <label><input type="radio" name="q100" value="a">It ensures faster feedback and integration into development.</label><br>
+    <label><input type="radio" name="q100" value="b">It replaces the need for manual testers.</label><br>
+    <label><input type="radio" name="q100" value="c">It eliminates all software defects.</label>
+</div>
+    </form>
+
+    <button type="button" onclick="gradeExam()">Submit</button>
+    <div id="result" class="result"></div>
+
+    <script>
+        function gradeExam() {
+            const answers = {
+                q1: 'b', q2: 'a', q3: 'a', q4: 'b', q5: 'b',
+                q6: 'a', q7: 'a', q8: 'a', q9: 'b', q10: 'a',
+                q11: 'b', q12: 'a', q13: 'a', q14: 'b', q15: 'b',
+                q16: 'b', q17: 'a', q18: 'a', q19: 'b', q20: 'a',
+                q21: 'b', q22: 'a', q23: 'b', q24: 'a', q25: 'b',
+                q26: 'a', q27: 'a', q28: 'b', q29: 'a', q30: 'a',
+                q31: 'b', q32: 'b', q33: 'a', q34: 'a', q35: 'a',
+                q36: 'a', q37: 'a', q38: 'a', q39: 'a', q40: 'a',
+                q41: 'a', q42: 'b', q43: 'a', q44: 'a', q45: 'a',
+                q46: 'a', q47: 'a', q48: 'a', q49: 'a', q50: 'a',
+                q51: 'a', q52: 'a', q53: 'a', q54: 'a', q55: 'a',
+                q56: 'a', q57: 'a', q58: 'a', q59: 'a', q60: 'a',
+                q61: 'a', q62: 'b', q63: 'a', q64: 'a', q65: 'b',
+                q66: 'a', q67: 'a', q68: 'a', q69: 'a', q70: 'a',
+                q71: 'a', q72: 'a', q73: 'a', q74: 'a', q75: 'a',
+                q76: 'a', q77: 'a', q78: 'a', q79: 'a', q80: 'a',
+                q81: 'a', q82: 'a', q83: 'a', q84: 'a', q85: 'a',
+                q86: 'a', q87: 'a', q88: 'a', q89: 'a', q90: 'a',
+                q91: 'a', q92: 'a', q93: 'a', q94: 'a', q95: 'a',
+                q96: 'a', q97: 'a', q98: 'a', q99: 'a', q100: 'a'
+            };
+
+            let score = 0;
+            const form = document.getElementById('exam-form');
+            const result = document.getElementById('result');
+            const userAnswers = new FormData(form);
+
+            for (const [question, answer] of Object.entries(answers)) {
+                if (userAnswers.get(question) === answer) {
+                    score++;
+                }
+            }
+
+            result.style.display = 'block';
+            result.innerHTML = `<h2>Your Score: ${score} / 100</h2>`;
+        }
+    </script>
+</body>
+</html>
