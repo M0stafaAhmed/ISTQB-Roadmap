@@ -67,8 +67,13 @@ The practice questions are study exercises, not official ISTQB examination quest
 
 The pages are static client-side documents. They do not require an account or application backend. Quiz interactions run in the browser; this project does not implement server-side score storage or synchronization.
 
-## License and trademarks
+## License and permissions
 
-The repository includes an MIT License for original project material. See [LICENSE](./LICENSE).
+This repository is **proprietary; all rights reserved**. You may view it where access is granted. For a public repository, GitHub's Terms of Service permit users to view and fork it on GitHub. Those platform permissions do not grant a general right to reuse, modify, redistribute, sublicense, or commercially exploit the original material outside GitHub.
 
-ISTQB and related certification names are trademarks of their respective owners. The license does not grant rights to third-party marks, official syllabus material, or content that the repository author does not own or have permission to redistribute.
+Obtain prior, express, written permission from the copyright holder before any such use beyond the rights GitHub grants. Sending a request is not approval; wait for written authorization. See [LICENSE](./LICENSE) for the full scope, exclusions, permission-request route, and treatment of earlier license grants.
+
+**Third-party material:** This notice covers only original material that the repository owner owns or is authorized to license. Third-party software, images, fonts, trademarks, curricula, standards, datasets, contributions, and other external content remain subject to their respective rights and terms. This repository does not relicense them.
+
+**Certification boundary:** ISTQB names and marks, official syllabi, glossaries, and official training materials remain with their respective rights holders. This is an independent study project and is not endorsed by ISTQB.
+
